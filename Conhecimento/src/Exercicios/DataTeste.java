@@ -13,7 +13,9 @@ public class DataTeste {
         p2.dia = 10;
 
 
-        System.out.print(p1);
+        System.out.println("data " + p1.dia +  p1.mes  + p1.ano );
+        System.out.println("data " + p1.dia + "/" + p1.mes + "/" + p1.ano );
+        System.out.printf( "data %d/%d/%d", p1.dia, p2.mes, p2.ano );
 
     }
 }

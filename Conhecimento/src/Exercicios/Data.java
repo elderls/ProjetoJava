@@ -1,7 +1,13 @@
 package Exercicios;
 
 public class Data {
-    int dia;
-    int mes;
-    int ano;
+    String dia;
+    String mes;
+    String ano;
+
+
+    String obterFormatacao(){
+
+        String saida.obterFormatacao("%d/%d%d") ;
+    } 
 }
