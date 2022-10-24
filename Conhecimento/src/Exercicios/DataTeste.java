@@ -15,7 +15,7 @@ public class DataTeste {
 
         System.out.println("data " + p1.dia +  p1.mes  + p1.ano );
         System.out.println("data " + p1.dia + "/" + p1.mes + "/" + p1.ano );
-        System.out.printf( "data %d/%d/%d", p1.dia, p2.mes, p2.ano );
+        System.out.println(p1.obterFormatacao());
 
     }
 }

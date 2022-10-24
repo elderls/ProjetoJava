@@ -1,13 +1,13 @@
 package Exercicios;
 
 public class Data {
-    String dia;
-    String mes;
-    String ano;
+    int dia;
+    int mes;
+    int ano;
 
 
     String obterFormatacao(){
 
-        String saida.obterFormatacao("%d/%d%d") ;
+        return String.format("O dia do processamento é %d/%d/%d",dia, mes, ano) ;
     } 
 }
