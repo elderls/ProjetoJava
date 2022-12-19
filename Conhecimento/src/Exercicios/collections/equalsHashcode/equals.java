@@ -1,5 +1,6 @@
-package Exercicios.equalsHashcode;
- 
+package equalsHashcode;
+
+import Usuario;
 
 public class equals {
     public static void main(String[] args) {
