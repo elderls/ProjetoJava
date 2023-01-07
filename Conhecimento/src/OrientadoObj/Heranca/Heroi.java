@@ -2,7 +2,7 @@ package OrientadoObj.Heranca;
 
 public class Heroi extends Jogador {
     
-    boolean atacar(Jogador oponente) {
+    boolean Fugir(Jogador oponente) {
 
         int deltax = Math.abs(x - oponente.x);
         int deltay = Math.abs(y - oponente.y);

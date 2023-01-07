@@ -10,24 +10,40 @@ public class Jogar {
         heroi.x = 10;
         heroi.y = 11;      
 
-        Jogador j3 = new Jogador();
-        j3.x = 10;
-        j3.y = 12;             
+        Jogador jogador = new Jogador();
+        jogador.x = 10;
+        jogador.y = 12;             
 
         System.out.println("atacate mostro >>> " + mostro.vida);
+        System.out.println("posição mostro >>> " + mostro.x + mostro.y);
+
         System.out.println("atacate super heroi >>> " + heroi.vida);
-        System.out.println("atacate jogador >>> " + j3.vida);
+        System.out.println("posição super heroi >>> " + heroi.x + heroi.y);
+
+        System.out.println("atacate jogador >>> " + jogador.vida);
+        System.out.println("posição jogador >>> " + jogador.x + jogador.y);
+        System.out.println("------------------------------------------");
 
 //      j1.andar(Direcao.NORTE);
 //      j1.andar(Direcao.NORTE);
 //      j1.andar(Direcao.SUL);
 
-        mostro.atacar(heroi);
-        heroi.atacar(mostro);
-        j3.atacar(heroi);
+        mostro.Fugir(heroi);
+        heroi.Fugir(mostro);
+        jogador.Fugir(heroi);
+
+        heroi.Fugir(Direcao.NORTE); // fugir 
+        jogador.Fugir(heroi);
 
         System.out.println("atacado mostro >>> " + mostro.vida);
+        System.out.println("posição mostro >>> " + mostro.x + mostro.y);
+        System.out.println("  " );
+
         System.out.println("atacado super heroi >>> " + heroi.vida);
-        System.out.println("atacado jogador >>> " + j3.vida);
+        System.out.println("posição super heroi >>> " + heroi.x + heroi.y);
+        System.out.println("  " );
+
+        System.out.println("atacado jogador >>> " + jogador.vida);
+        System.out.println("posição jogador >>> " + jogador.x + jogador.y);
     }
 }

@@ -5,7 +5,7 @@ public class Jogador {
     int y;
     int vida = 100;
 
-    boolean atacar(Jogador oponente) {
+    boolean Fugir(Jogador oponente) {
 
         int deltax = Math.abs(x - oponente.x);
         int deltay = Math.abs(y - oponente.y);
@@ -21,7 +21,7 @@ public class Jogador {
         }
         
     }
-    boolean andar(Direcao direcao) {
+    boolean Fugir(Direcao direcao) {
         switch (direcao) {
             case NORTE:
                 y--;
