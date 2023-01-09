@@ -3,25 +3,25 @@ package OrientadoObj.Heranca.Desafio;
 public class AceleraCarro {
     public static void main(String[] args) {
 
-        Ferrari supercar = new Ferrari();
-        CarroPopular carropopular = new CarroPopular();
+        Ferrari ferrari = new Ferrari();
+        CarroPopular civic = new CarroPopular();
 
-        supercar.acelerar(TipoCarro.SUPERCARRO);
+        ferrari.acelerar(TipoCarro.SUPERCARRO);
 
-        carropopular.acelerar(TipoCarro.CARROPOPULAR);
-        carropopular.acelerar(TipoCarro.CARROPOPULAR);
-        carropopular.acelerar(TipoCarro.CARROPOPULAR);
-        carropopular.acelerar(TipoCarro.CARROPOPULAR);
+        civic.acelerar(TipoCarro.CARROPOPULAR);
+        civic.acelerar(TipoCarro.CARROPOPULAR);
+        civic.acelerar(TipoCarro.CARROPOPULAR);
+        civic.acelerar(TipoCarro.CARROPOPULAR);
 
 
-        supercar.Freiar(TipoCarro.SUPERCARRO);
-        supercar.Freiar(TipoCarro.SUPERCARRO);
-        supercar.Freiar(TipoCarro.SUPERCARRO);
+        ferrari.Freiar(TipoCarro.SUPERCARRO);
+        ferrari.Freiar(TipoCarro.SUPERCARRO);
+        ferrari.Freiar(TipoCarro.SUPERCARRO);
 
-        carropopular.Freiar(TipoCarro.CARROPOPULAR);
-        carropopular.Freiar(TipoCarro.CARROPOPULAR);
+        civic.Freiar(TipoCarro.CARROPOPULAR);
+        civic.Freiar(TipoCarro.CARROPOPULAR);
 
-        System.out.println(supercar.velatual);
-        System.out.println(carropopular.velatual);
+        System.out.println(ferrari.velatual);
+        System.out.println(civic.velatual);
     }
 }
