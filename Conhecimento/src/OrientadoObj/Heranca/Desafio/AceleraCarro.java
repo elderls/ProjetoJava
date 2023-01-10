@@ -3,9 +3,11 @@ package OrientadoObj.Heranca.Desafio;
 public class AceleraCarro {
     public static void main(String[] args) {
 
-        Ferrari ferrari = new Ferrari();
-        CarroPopular civic = new CarroPopular();
+        Ferrari ferrari = new Ferrari(30);
+        CarroPopular civic = new CarroPopular(25);
 
+        ferrari.acelerar(TipoCarro.SUPERCARRO);
+        ferrari.acelerar(TipoCarro.SUPERCARRO);
         ferrari.acelerar(TipoCarro.SUPERCARRO);
 
         civic.acelerar(TipoCarro.CARROPOPULAR);
@@ -13,15 +15,10 @@ public class AceleraCarro {
         civic.acelerar(TipoCarro.CARROPOPULAR);
         civic.acelerar(TipoCarro.CARROPOPULAR);
 
-
-        ferrari.Freiar(TipoCarro.SUPERCARRO);
-        ferrari.Freiar(TipoCarro.SUPERCARRO);
-        ferrari.Freiar(TipoCarro.SUPERCARRO);
-
         civic.Freiar(TipoCarro.CARROPOPULAR);
         civic.Freiar(TipoCarro.CARROPOPULAR);
 
-        System.out.println(ferrari.velatual);
-        System.out.println(civic.velatual);
+        System.out.println("A velocidade atual da FERRARI é " + ferrari.velatual + " km/h");
+        System.out.println("A velocidade atual da CIVIC é " + civic.velatual + " km/h");
     }
 }
