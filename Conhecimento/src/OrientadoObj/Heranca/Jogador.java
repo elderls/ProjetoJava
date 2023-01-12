@@ -1,11 +1,11 @@
 package OrientadoObj.Heranca;
 
 public class Jogador {
-    int x;
-    int y;
-    int vida = 100;
+    public int x;
+    public int y;
+    public int vida = 100;
 
-    boolean Fugir(Jogador oponente) {
+    public boolean Fugir(Jogador oponente) {
 
         int deltax = Math.abs(x - oponente.x);
         int deltay = Math.abs(y - oponente.y);
@@ -21,7 +21,7 @@ public class Jogador {
         }
         
     }
-    boolean Fugir(Direcao direcao) {
+    public boolean Fugir(Direcao direcao) {
         switch (direcao) {
             case NORTE:
                 y--;

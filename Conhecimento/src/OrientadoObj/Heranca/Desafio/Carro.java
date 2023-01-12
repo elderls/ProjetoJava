@@ -2,15 +2,15 @@ package OrientadoObj.Heranca.Desafio;
 
 public class Carro {
     
-    int velatual;
+    public int velatual;
     final int VELMAXIMA;
 
-    Carro(int velocidadeMaxima) {
+   protected Carro(int velocidadeMaxima) {
         VELMAXIMA = velocidadeMaxima;
     }
 
 
-    Boolean acelerar(TipoCarro tp) {
+    public Boolean acelerar(TipoCarro tp) {
 
         switch(tp) {
             case SUPERCARRO:            
@@ -34,7 +34,7 @@ public class Carro {
     }
 
 
-    Boolean Freiar(TipoCarro tp) {
+    public Boolean Freiar(TipoCarro tp) {
         switch(tp) {
             case SUPERCARRO:
             velatual = velatual - 15;

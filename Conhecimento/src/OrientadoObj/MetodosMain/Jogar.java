@@ -1,4 +1,9 @@
-package OrientadoObj.Heranca;
+package OrientadoObj.MetodosMain;
+
+import OrientadoObj.Heranca.Direcao;
+import OrientadoObj.Heranca.Heroi;
+import OrientadoObj.Heranca.Jogador;
+import OrientadoObj.Heranca.Mostro;
 
 public class Jogar {
     public static void main(String[] args) {
