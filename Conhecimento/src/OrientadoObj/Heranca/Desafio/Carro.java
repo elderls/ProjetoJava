@@ -2,57 +2,47 @@ package OrientadoObj.Heranca.Desafio;
 
 public class Carro {
     
-    public int velatual;
-    final int VELMAXIMA;
+    public final int VELMAXIMA;
+    int velatual;
+    private int giro = 0;
 
-   protected Carro(int velocidadeMaxima) {
+    public int getGiro() {
+        return giro;
+    }
+
+
+    public void setGiro(int giro) {
+        this.giro = giro;
+    }
+
+
+    protected Carro(int velocidadeMaxima) {
         VELMAXIMA = velocidadeMaxima;
     }
 
 
-    public Boolean acelerar(TipoCarro tp) {
+    public void acelerar() {
 
-        switch(tp) {
-            case SUPERCARRO:            
-            velatual = velatual + 15;
-            if (velatual > VELMAXIMA) {
-                velatual = VELMAXIMA;
-                break;
-            }
-            break;
-            case CARROPOPULAR:
-            velatual = velatual + 5;
-            if (velatual > VELMAXIMA) {
-                velatual = VELMAXIMA;
-                break;
-            }
-            break;
+        if (velatual + getGiro() > VELMAXIMA) {
+            velatual = VELMAXIMA;
+        } else {
+            velatual += getGiro();
         }
-        return false;
-
 
     }
 
 
-    public Boolean Freiar(TipoCarro tp) {
-        switch(tp) {
-            case SUPERCARRO:
-            velatual = velatual - 15;
-            if (velatual < 0) {
-                velatual = 0;
-                break;
-            }
-            break;
-            case CARROPOPULAR:
-            velatual = velatual - 5;
-            if (velatual < 0) {
-                velatual = 0;
-                break;
-             }
-            break;
+    public void frear() {
+        if(velatual >=5) {
+            velatual -= 5;
+        } else {
+            velatual = 0;
         }
-
-        return false;
-         
     }
+
+    @Override
+    public String toString() {          
+        return "A velocidade atual da FERRARI é " + velatual + " km/h";
+    }
+    
 }

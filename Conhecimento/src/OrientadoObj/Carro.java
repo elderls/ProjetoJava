@@ -2,6 +2,7 @@ package OrientadoObj;
 
 public class Carro {
     Motor motor = new Motor();
+    public String velatual;
 // teste git
     void acelerar() {
         if(motor.fatorinj < 2.6) {
