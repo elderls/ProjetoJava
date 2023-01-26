@@ -7,7 +7,7 @@ private boolean ligarAr;
 
 public Ferrari(int velocidadeMaxima) {
         super(velocidadeMaxima);
-        setGiro(15);
+        setGiro(5);
     }
   
 // @Override

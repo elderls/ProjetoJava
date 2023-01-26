@@ -13,7 +13,10 @@ public class AceleraCarro {
         CarroPopular civic = new CarroPopular(190);
 
         ferrari.acelerar();
+        ferrari.acelerar();
+        ferrari.acelerar();
         ferrari.ligaTurbo();
+        ferrari.desligarAr();
 //        ferrari.ligaTurbo();
 //        ferrari.acelerar(TipoCarro.SUPERCARRO);
 //        ferrari.acelerar(TipoCarro.SUPERCARRO);
