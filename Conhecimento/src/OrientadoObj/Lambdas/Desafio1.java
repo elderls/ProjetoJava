@@ -27,12 +27,7 @@ public class Desafio1 {
 
         Produto p = new Produto("Notebook", 3595.15, 0.15);
 
-        String preco = precoFinal
-                       .andThen(impostoMunicipal)
-                       .andThen(freteFinal)
-                       .andThen(arrendondar)
-                       .andThen(formatar)
-                       .apply(p);
+        String preco = precoFinal.andThen(impostoMunicipal).andThen(freteFinal).andThen(arrendondar).andThen(formatar).apply(p);
 
         System.out.println("O valor final com desconto é : " + preco);
     }
