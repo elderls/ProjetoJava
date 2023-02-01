@@ -8,8 +8,6 @@ public class Desafio1 {
     public static void main(String[] args) {
 
 
-
-
         // calcular preco com desconto
         Function<Produto, Double> precoFinal = prod -> prod.preco * (1 - prod.desconto);
 
