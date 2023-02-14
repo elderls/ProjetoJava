@@ -1,5 +1,4 @@
 package OrientadoObj.StreamApi;
-
 import java.util.function.UnaryOperator;
 
 public class Utilitario {
@@ -13,4 +12,17 @@ public class Utilitario {
     public final static String grito(String n) {
         return n + "!!! ";
     }
+
+    public final static String converter(String ent) {
+
+        return Integer.valueOf(ent).toString();
+
+    }
+   
+
+    public static String saidaBase (int a, int base) {
+        return Integer.toString(a);
+    }
+
+
 }
